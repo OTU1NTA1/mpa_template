@@ -1,0 +1,44 @@
+{
+  "name": "mpa_template",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "build": "npx cross-env NODE_ENV=production webpack build --config webpack.config.js --mode production",
+    "dev": "npx cross-env  NODE_ENV=development  webpack serve --config webpack.config.js --mode development"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^13.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.0",
+    "ejs": "^3.1.6",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^2.9.2",
+    "postcss-loader": "^8.1.1",
+    "postcss-preset-env": "^10.1.5",
+    "sass": "^1.33.0",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "template-ejs-loader": "latest",
+    "terser-webpack-plugin": "^5.3.1",
+    "webpack": "^5.31.2",
+    "webpack-bundle-analyzer": "^4.8.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "dependencies": {
+    "es6-promise": "^4.2.8",
+    "github-markdown-css": "^5.8.1",
+    "jquery": "^3.7.1",
+    "marked": "^15.0.7"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "IE 10"
+  ]
+}
